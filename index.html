@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Ricardo!</title>
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
     <script src="./phaser.min.js"></script><!-- siempre primero el phaseer -->
     <script type="module" src="./game.js"></script>
     <style>
         body {
             display: grid;
-            height: 100vh;
-            align-items: center;
+            height: auto;
             justify-content: center;
             background-color: black;
             padding-top: 5px;
@@ -21,6 +21,11 @@
 
 <body>
     <div id="game"></div>
+    <script>
+        window.onload = function () {
+            document.body.style.zoom = "250%";
+        };
+    </script>
 </body>
 
 </html>

@@ -26,6 +26,7 @@ new Phaser.Game(config);
 function preload() {
   /* this -> game -> el juego que estamos construyendo */
   this.load.image("cloud1", "assets/scenery/overworld/cloud1.png");
+  this.load.image("cloud2", "assets/scenery/overworld/cloud2.png");
   this.load.image("floorbricks", "assets/scenery/overworld/floorbricks.png");
   this.load.spritesheet("mario", "assets/entities/mario.png", {
     frameWidth: 18,
@@ -38,8 +39,11 @@ function preload() {
 function create() {
   /* para dar la propiedad o crear una imagen u oobjeto, debe ser */
   /* image(x,y, nombre del aset) */
-  this.add.image(0, 0, "cloud1").setOrigin(0, 0).setScale(0.15);
-
+  this.add.image(20, 70, "cloud1").setOrigin(0, 0).setScale(0.15);
+  this.add.image(120, 30, "cloud2").setOrigin(0, 0).setScale(0.15);
+  this.add.image(150, 20, "cloud1").setOrigin(0, 0).setScale(0.15);
+  this.add.image(170, 30, "cloud2").setOrigin(0, 0).setScale(0.15);
+  this.add.image(250, 45, "cloud2").setOrigin(0, 0).setScale(0.15);
   //configuracion de las teclas
   this.keys = this.input.keyboard.createCursorKeys();
 
